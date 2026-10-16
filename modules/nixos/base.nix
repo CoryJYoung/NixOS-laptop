@@ -19,6 +19,12 @@
       time.timeZone = "Europe/Oslo";
       i18n.defaultLocale = "en_US.UTF-8";
 
+      services.xserver.xkb = {
+        layout = "no";
+        variant = "nodeadkeys";
+      };
+      console.useXkbConfig = true;
+
       # Sound
       security.rtkit.enable = true;
       services.pipewire = {
@@ -32,6 +38,12 @@
         curl
         vim
       ];
+
+      environment.shellAliases = {
+        rebuild = "sudo nixos-rebuild switch --flake ~/nixos-config#laptop";
+        rebuild-test = "sudo nixos-rebuild test --flake ~/nixos-config#laptop";
+        update = "nix flake update --flake ~/nixos-config && rebuild";
+      };
 
       # Set this to the NixOS release you first installed with, then never change it.
       system.stateVersion = "26.05";
