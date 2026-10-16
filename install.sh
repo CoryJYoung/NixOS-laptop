@@ -33,8 +33,10 @@ fi
 git add "$HW"
 
 echo ">> Building and switching to .#$HOST"
-sudo nixos-rebuild switch --flake ".#$HOST" \
-  --option experimental-features "nix-command flakes"
+# Nix shells out to git to read a git+file flake, so git must be on PATH for
+# the rebuild too (a fresh install has none until this first switch adds it).
+sudo nix-shell -p git --run \
+  "nixos-rebuild switch --flake '.#$HOST' --option experimental-features 'nix-command flakes'"
 
 echo ">> Done. Commit the hardware config with:"
 echo "   cd $DEST && git commit -m 'Add laptop hardware config' && git push"
