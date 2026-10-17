@@ -14,7 +14,6 @@
       };
 
       environment.systemPackages = with pkgs; [
-        fuzzel             # app launcher (Mod+D in niri's default config)
         xwayland-satellite # X11 app support
       ];
 

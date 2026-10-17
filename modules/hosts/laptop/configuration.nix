@@ -9,10 +9,12 @@ in
       features.base
       features.user
       features.niri
-      features.kitty
       features.firefox
       features.onepassword
       features.vscode
+      features.noctalia
+      features.ghostty
+      features.gnome-keyring
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
 
