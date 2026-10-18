@@ -31,6 +31,7 @@ modules/
   hosts/laptop/_hardware-configuration.nix  generated (the "_" means import-tree skips it)
   nixos/base.nix                 boot, network, locale, sound, nix settings
   nixos/user.nix                 user account
+  nixos/plymouth.nix             boot splash, themed LUKS prompt, silent boot
   desktop/niri.nix               niri, greetd login, fuzzel, fonts
   apps/kitty.nix                 kitty
 ```
