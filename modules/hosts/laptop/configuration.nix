@@ -7,6 +7,7 @@ in
   flake.nixosConfigurations.laptop = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       features.base
+      features.plymouth
       features.user
       features.niri
       features.firefox
