@@ -1,0 +1,17 @@
+{ inputs, ... }:
+{
+  flake.modules.nixos.claude-code =
+    { pkgs, ... }:
+    {
+      nixpkgs.overlays = [ inputs.claude-code.overlays.default ];
+      environment.systemPackages = [ pkgs.claude-code ];
+
+      # Optional: download prebuilt binaries instead of building locally
+      nix.settings = {
+        substituters = [ "https://claude-code.cachix.org" ];
+        trusted-public-keys = [
+          "claude-code.cachix.org-1:YeXf2aNu7UTX8Vwrze0za1WEDS+4DuI2kVeWEE4fsRk="
+        ];
+      };
+    };
+}

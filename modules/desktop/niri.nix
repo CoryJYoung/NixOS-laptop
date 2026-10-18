@@ -15,6 +15,7 @@
 
       environment.systemPackages = with pkgs; [
         xwayland-satellite # X11 app support
+        brightnessctl   # brightness keys
       ];
 
       fonts.packages = with pkgs; [

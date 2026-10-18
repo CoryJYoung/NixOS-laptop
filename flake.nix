@@ -8,6 +8,10 @@
     flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
 
     import-tree.url = "github:vic/import-tree";
+
+    # Claude Code
+    claude-code.url = "github:sadjow/claude-code-nix";
+
   };
 
   # Dendritic pattern: every .nix file under ./modules is a flake-parts module.

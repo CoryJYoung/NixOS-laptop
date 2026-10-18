@@ -15,6 +15,9 @@ in
       features.noctalia
       features.ghostty
       features.gnome-keyring
+      features.incus
+      features.claude-code
+      features.opentofu
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
 
