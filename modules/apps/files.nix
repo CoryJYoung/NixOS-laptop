@@ -10,6 +10,8 @@
       # Trash, USB drives, phones, network shares (smb://, sftp://) in Nautilus
       services.gvfs.enable = true;
 
+      services.udisks2.enable = true;
+
       # Make Nautilus the default for "open folder"
       xdg.mime.defaultApplications."inode/directory" = "org.gnome.Nautilus.desktop";
     };

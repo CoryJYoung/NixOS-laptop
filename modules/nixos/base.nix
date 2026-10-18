@@ -16,6 +16,8 @@
 
       networking.networkmanager.enable = true;
 
+      services.hardware.bolt.enable = true;
+
       # Bluetooth
       hardware.bluetooth = {
         enable = true;

@@ -19,6 +19,7 @@ in
       features.claude-code
       features.opentofu
       features.github-cli
+      features.files
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
 

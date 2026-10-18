@@ -4,7 +4,7 @@
   {
     environment.systemPackages = [ pkgs.github-cli ];
 
-    programes.git = {
+    programs.git = {
       enable = true;
       config.credential."https://github.com".helper = "!gh auth git-credential";
     };
