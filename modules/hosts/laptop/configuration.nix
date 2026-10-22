@@ -22,6 +22,7 @@ in
       features.github-cli
       features.files
       features.ssh
+      features.homelab-ssh
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
 
