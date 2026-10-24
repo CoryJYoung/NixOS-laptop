@@ -17,6 +17,7 @@ in
       features.ghostty
       features.gnome-keyring
       features.incus
+      features.lazyincus
       features.claude-code
       features.opentofu
       features.github-cli
