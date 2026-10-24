@@ -21,7 +21,7 @@
         };
 
         # First build fails and prints the real hash: paste the "got:" value here.
-        vendorHash = pkgs.lib.fakeHash;
+        vendorHash = "sha256-LrdomtygUd4VlUigruriGSRzQy9XWZO+m8UOVQV/N5M=";
 
         env.CGO_ENABLED = 0;
         ldflags = [
