@@ -15,16 +15,12 @@
           theme = "bgrt";
         };
 
-        # systemd in the initrd hands the LUKS prompt to Plymouth cleanly.
-        initrd.systemd.enable = true;
-
         # Load the Intel GPU driver early so the splash shows immediately
         # at native resolution.
         initrd.kernelModules = [ "i915" ];
 
         # Silent boot: hide kernel and systemd messages behind the splash.
         consoleLogLevel = 3;
-        initrd.verbose = false;
         kernelParams = [
           "quiet"
           "splash"

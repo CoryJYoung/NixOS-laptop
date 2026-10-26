@@ -2,7 +2,7 @@
   flake.modules.nixos.noctalia =
     { pkgs, ... }:
     {
-      environment.systemPackages = [ pkgs.noctalia-shell ];
+      environment.systemPackages = [ pkgs.noctalia ];
 
       # Battery and power-mode widgets
       services.upower.enable = true;
