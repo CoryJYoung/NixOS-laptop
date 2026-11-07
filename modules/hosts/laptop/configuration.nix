@@ -14,15 +14,20 @@ in
       features.onepassword
       features.vscode
       features.noctalia
+      features.noctalia-rice
       features.ghostty
       features.gnome-keyring
       features.incus
+      features.lazyincus
       features.claude-code
       features.opentofu
       features.github-cli
       features.files
+      features.media
       features.ssh
       features.homelab-ssh
+      features.ntfy-client
+      features.localsend
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
 
