@@ -14,6 +14,7 @@ in
       features.onepassword
       features.vscode
       features.noctalia
+      features.noctalia-rice
       features.ghostty
       features.gnome-keyring
       features.incus
