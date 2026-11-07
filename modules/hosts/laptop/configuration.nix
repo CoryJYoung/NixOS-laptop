@@ -26,6 +26,7 @@ in
       features.media
       features.ssh
       features.homelab-ssh
+      features.ntfy-client
       features.localsend
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
