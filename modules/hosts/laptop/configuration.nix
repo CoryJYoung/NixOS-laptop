@@ -29,6 +29,7 @@ in
       features.ntfy-client
       features.localsend
       features.jellyfin-clients
+      features.tmux
       # Generated on the laptop by install.sh (the "_" keeps import-tree from loading it)
       ./_hardware-configuration.nix
 
