@@ -18,6 +18,9 @@
 
       services.hardware.bolt.enable = true;
 
+      # Firmware updates (BIOS, Thunderbolt, etc.) via fwupdmgr
+      services.fwupd.enable = true;
+
       # Bluetooth
       hardware.bluetooth = {
         enable = true;

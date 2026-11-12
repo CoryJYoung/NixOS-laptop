@@ -34,6 +34,10 @@ in
       ./_hardware-configuration.nix
 
       { networking.hostName = "laptop"; }
+
+      # One USB-C/Thunderbolt port loops on "failed to enable CL states" and
+      # tunnel activation failures with the Samsung C34J79x; disable CLx power states.
+      { boot.kernelParams = [ "thunderbolt.clx=0" ]; }
     ];
   };
 }
